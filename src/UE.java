@@ -3,10 +3,7 @@ import java.util.Scanner;
 public class UE {
 
 	String nomUE;
-
-	/*
-	 * public UE(String saisieUE) { nomUE = saisieUE; }
-	 */
+	
 	public static void main(String[] args) {
 
 		int exec = 0;
@@ -19,12 +16,6 @@ public class UE {
 				String str = sc.nextLine();
 
 				String newLine = System.getProperty("line.separator");
-
-				/*
-				 * CREATION OBJETS AVEC PARAMETRES UE math02 = new UE("MATH02"); UE sy01 = new
-				 * UE("SY01"); UE lo02 = new UE("LO02");
-				 */
-				// A REMPLACER PAR UN SWITCH
 
 				switch (str) {
 				case "MATH02":
@@ -43,7 +34,7 @@ public class UE {
 					}
 					else {
 						System.out.println("Tu dois avoir au moins 5 au final pour valider l'UE...");
-						System.out.println("Soit la note éliminatoire. T'es tranquille si tu fais pas n'importe quoi !" + newLine);
+						System.out.println("Soit la note Ã©liminatoire. T'es tranquille si tu fais pas n'importe quoi !" + newLine);
 					}
 					break;
 
@@ -61,17 +52,17 @@ public class UE {
 						System.out.println("Allez tu peux le faire !" + newLine);
 					} else {
 						System.out.println("Tu dois avoir au moins 7 au final pour valider l'UE...");
-						System.out.println("Soit la note éliminatoire. Easy." + newLine);
+						System.out.println("Soit la note Ã©liminatoire. Easy." + newLine);
 					}
 					break;
 
 				case "LO02":
 					saisie = 1;
-					System.out.println("Quelle est ta note au médian ?");
+					System.out.println("Quelle est ta note au mÃ©dian ?");
 					double noteMedianLO02 = (sc.nextDouble()) * 0.2;
 					System.out.println("Quelle est ta note au projet ?");
 					double noteProjetLO02 = (sc.nextDouble()) * 0.3;
-					System.out.println("Quelle est ta note au TP noté ?");
+					System.out.println("Quelle est ta note au TP notÃ© ?");
 					double noteTPLO02 = (sc.nextDouble()) * 0.2;
 					double noteTotalLO02 = 10;
 					double noteFinalLO02 = (noteTotalLO02 - noteMedianLO02 - noteProjetLO02 - noteTPLO02) / 0.3;
@@ -81,7 +72,7 @@ public class UE {
 						System.out.println("Allez tu peux le faire !" + newLine);
 					} else {
 						System.out.println("Tu dois avoir au moins 6 au final pour valider l'UE...");
-						System.out.println("Soit la note éliminatoire. Reste focus et ça passe !	" + newLine);
+						System.out.println("Soit la note Ã©liminatoire. Reste focus et Ã§a passe !	" + newLine);
 					}
 					break;
 				default:
